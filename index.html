@@ -1,0 +1,761 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>furniture</title>
+    <!-- favicon -->
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <!-- font awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <!-- google font -->
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Allura&family=DM+Serif+Display:ital@0;1&family=Exo+2:ital,wght@0,100..900;1,100..900&family=Merienda:wght@300..900&family=Oswald:wght@200..700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Quicksand:wght@300..700&family=Shadows+Into+Light&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <!-- discount bar -->
+        <div id="discount" class="text-center bg-warning pt-3">
+            <marquee behavior="" direction=""><h6>Extra 50 off on above Rs.10,000 </h6></marquee>
+        </div>
+        <!-- navbar -->
+        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#">  <i class="fa-solid fa-couch fa-lg" style="color: rgb(21, 13, 79);"  width="30" height="24"></i>
+</a>
+    <a class="navbar-brand" href="#">IKEA</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse " id="navbarSupportedContent">
+      <ul class="navbar-nav mx-auto mb-2 mb-lg-0 ">
+        <li class="nav-item pe-5">
+          <a class="nav-link active" aria-current="page" href="#">Home</a>
+        </li>
+        <li class="nav-item pe-5">
+          <a class="nav-link active" aria-current="page" href="#">Contact Us</a>
+        </li>
+        <li class="nav-item pe-5">
+          <a class="nav-link" href="#">Sell on IKEA</a>
+        </li>
+         <li class="nav-item pe-5">
+          <a class="nav-link" href="#">Gift Cards</a>
+        </li>
+        <li class="nav-item dropdown pe-5">
+          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+           products
+          </a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#">Sofa</a></li>
+            <li><a class="dropdown-item" href="#">Chair</a></li>
+            <li><a class="dropdown-item" href="#">Matress</a></li>
+            <li><a class="dropdown-item" href="#">TV Unit</a></li>
+            <li><a class="dropdown-item" href="#">Kitchen & Dining</a></li>
+            
+            <li><hr class="dropdown-divider"></li>
+            <li><a class="dropdown-item" href="#">Something else here</a></li>
+            
+          </ul>
+        </li>
+      </ul>
+      <form class="d-flex" role="search">
+        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search"/>
+        
+        <div class="pt-3">
+          <i class="fa-solid fa-cart-shopping fa-lg" style="color: rgb(21, 13, 79);"></i>
+        </div>
+        
+      </form>
+    </div>
+  </div>
+</nav>
+<nav class="navbar bg-body-tertiary">
+  <form class="container-fluid">
+    <div class="input-group">
+      <span class="input-group-text" id="basic-addon1">@</span>
+      <input type="text" class="form-control" placeholder="Username" aria-label="Username" aria-describedby="basic-addon1"/>
+       <button class="btn btn-outline-primary me-2" type="button"><i class="fa-solid fa-user fa-lg" style="color: rgb(21, 13, 79);"></i></button>
+       <button class="btn btn-outline-primary me-2" type="button"><i class="fa-solid fa-heart fa-lg" style="color: rgb(21, 13, 79);"></i></button>
+        <button class="btn btn-outline-primary me-2" type="button"><i class="fa-solid fa-store fa-lg" style="color: rgb(21, 13, 79);"></i></button>
+
+    </div>
+  </form>
+</nav>
+    </header>
+    <!-- carousal -->
+     <div id="carouselExampleIndicators" class="carousel slide">
+  <div class="carousel-indicators">
+    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+  </div>
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="https://th.bing.com/th/id/R.3a983631305403e13776672b2fcb6fa6?rik=9y8MqvnP6DlZjg&riu=http%3a%2f%2fhogfurniture.co%2fcdn%2fshop%2farticles%2fHow_Custom_Furniture_Can_Refresh_Your_Space_1.png%3fv%3d1740574691&ehk=r0FW5i%2f23Hb0UdSLhbjnHgMQFsY35kQ9qBugV6XzZc4%3d&risl=&pid=ImgRaw&r=0" height="700px" class="d-block w-100" alt="...">
+    </div>
+    <div class="carousel-item">
+      <img src="https://evansofhighwycombe.co.uk/wp-content/uploads/2023/07/Miami-2000x900-1.jpg" height="700px" class="d-block w-100" alt="...">
+    </div>
+    <div class="carousel-item">
+      <img src="https://i.pinimg.com/736x/e3/62/52/e36252c5992c4dfec35eec74ef2e1118.jpg" height="700px" class="d-block w-100" alt="...">
+    </div>
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>
+
+<!-- imaagecard -->
+ <section class="ps-5">
+    <h1 class="text-center">popular categories</h1>
+    <div class="row w-100 py-5 ps-3" >
+        <div class="col">
+              <img class="rounded-circle" src="https://images2.alphacoders.com/647/thumb-1920-647567.jpg" class="card-img-top" width="200px" height="200px"  alt="...">
+              <h6 class="fw-normal mx-5 my-3 ps-4">Recliner</h6>
+        </div>
+        <div class="col">
+            <img class="rounded-circle" src="https://images.sofology.co.uk/dpr_auto/f_auto,c_limit,w_3840,q_auto/ProductMedia/LifeStyle/SKU001314017.jpg" class="card-img-top" width="200px" height="200px"  alt="...">
+            <h6 class="fw-normal mx-5 my-3 ps-4">Sofa</h6>
+        </div>
+        <div class="col">
+            <img class="rounded-circle" src="https://tse1.mm.bing.net/th/id/OIP.67nvfKOcCQ79rNvnv4bYzQHaHa?r=0&rs=1&pid=ImgDetMain&o=7&rm=3" class="card-img-top" width="200px" height="200px"  alt="...">
+            <h6 class="fw-normal mx-5 my-3 ps-4">Dining Set</h6>
+        </div>
+        <div class="col">
+            <img class="rounded-circle" src="https://cdn11.bigcommerce.com/s-3uyyclsi/product_images/uploaded_images/efh-blog-feb29-5.jpg" class="card-img-top" width="200px" height="200px"  alt="...">
+            <h6 class="fw-normal mx-5 my-3 ps-4">Beds</h6>
+        </div>
+        <div class="col">
+            <img class="rounded-circle" src="https://www.excelfurniture.co.in/assets/images/study-table/study-table19.jpg" class="card-img-top" width="200px" height="200px"  alt="...">
+            <h6 class="fw-normal mx-5 my-3 ps-4">Study Tables</h6>
+        </div>
+        <div class="col">
+            <img class="rounded-circle" src="https://i5.walmartimages.com/asr/97632e99-cd54-4865-bcb3-756c9ed5ee54.2862880254726357ecc3a8daf9ecdfe4.jpeg" class="card-img-top" width="200px" height="200px"  alt="...">
+            <h6 class="fw-normal mx-5 my-3 ps-4">Mattress</h6>
+        </div>
+    </div>
+    <div class="row w-100 py-5 ps-3" >
+        <div class="col">
+              <img class="rounded-circle" src="https://ratedlocks.com/wp-content/uploads/2020/10/Modern-Crystal-Chandeliers-for-Dining-Room2.jpg" class="card-img-top" width="200px" height="200px"  alt="...">
+              <h6 class="fw-normal mx-5 my-3 ps-4">Chandelier</h6>
+        </div>
+        <div class="col">
+            <img class="rounded-circle" src="https://i.pinimg.com/originals/c9/b0/46/c9b046eea16a6bdf31087ffeacbb2a01.jpg" class="card-img-top" width="200px" height="200px"  alt="...">
+            <h6 class="fw-normal mx-5 my-3 ps-4">Wardrobes</h6>
+        </div>
+        <div class="col">
+            <img class="rounded-circle" src="https://tse1.mm.bing.net/th/id/OIP.oZoJ9vSlu4VYRmpWfzMvFgHaHa?r=0&rs=1&pid=ImgDetMain&o=7&rm=3" class="card-img-top" width="200px" height="200px"  alt="...">
+            <h6 class="fw-normal mx-5 my-3 ps-4">Chairs</h6>
+        </div>
+        <div class="col">
+            <img class="rounded-circle" src="https://www.patiotable.co/wp-content/uploads/8694/covington-cast-aluminum-5-piece-outdoor-dining-set-round-table.jpg" class="card-img-top" width="200px" height="200px"  alt="...">
+            <h6 class="fw-normal mx-5 my-3 ps-4">Outdoor</h6>
+        </div>
+        <div class="col">
+            <img class="rounded-circle" src="https://ik.imagekit.io/durian1985/Durian/durian/product/800x800/product_2022100610111665051110_91164.jpg" class="card-img-top" width="200px" height="200px"  alt="...">
+            <h6 class="fw-normal mx-5 my-3 ps-4">Dressing table</h6>
+        </div>
+        <div class="col">
+            <img class="rounded-circle" src="https://tse2.mm.bing.net/th/id/OIP.5ODuhNnoCxN6B15a09ULdgHaHa?r=0&w=1200&h=1200&rs=1&pid=ImgDetMain&o=7&rm=3" class="card-img-top" width="200px" height="200px"  alt="...">
+            <h6 class="fw-normal mx-5 my-3 ps-4">Coffee Tables</h6>
+        </div>
+    </div>
+ </section>
+
+ <section class="ps-5">
+    <h1 class="text-center">Best Sellers</h1>
+    <div class="row w-100 py-5">
+      <div class="col-3 ">
+         <!-- Parent -->
+            <div class="position-relative">
+
+                <img src="https://tse1.explicit.bing.net/th/id/OIP.b9otnrKZAV_GFEgpIeORFgHaIa?r=0&w=1409&h=1600&rs=1&pid=ImgDetMain&o=7&rm=3" 
+                     class="img-fluid rounded w-100"
+                     style="height:350px; object-fit:cover;" 
+                     alt="">
+                     <p>penang malasian Boss Table 1.6-M in Melamine finish V2<br><strong>11,999.00</strong></p>
+
+                <!-- Badge -->
+                
+                <div class="position-absolute top-0 start-0 bg-danger text-white px-3 py-1 rounded-end fw-bold">55% off</div>
+               <div class="position-absolute top-0 end-0 bg-danger text-white px-3 py-1 rounded fw-bold">Best Seller</div>
+          </div>
+      </div>
+      <div class="col-3">
+         <!-- Parent -->
+            <div class="position-relative">
+
+                <img src="https://asset.targetfurniture.co.nz/image/5198LA3SM9812/gracey_3_seater_electric_leather_recliner_black_target_furniture_nz@03.jpeg"
+                    class="img-fluid rounded w-100"
+                     style="height:350px; object-fit:cover;"
+                     alt="">
+                     <p>miami american leather 3 seater recliner <br><strong>90,000.00</strong></p>
+
+                <!-- Badge -->
+                
+                <div class="position-absolute top-0 start-0 bg-danger text-white px-3 py-1 rounded-end fw-bold">53% off</div>
+                <div class="position-absolute top-0 end-0 bg-danger text-white px-3 py-1 rounded fw-bold">Best Seller</div>
+          </div>
+      </div>
+      <div class="col-3">
+         <!-- Parent -->
+            <div class="position-relative">
+
+                <img src="https://www.voilavoile.com/ie/upload/image/202303/eden-flower-jacquard-cream-heavy-net-curtains-img-5MGxFzklZv5aNQO3kccTyg-large.jpg"
+                    class="img-fluid rounded w-100"
+                     style="height:350px; object-fit:cover;"
+                     alt="">
+                     <p>tiff jacgaurd cream window curtain<br><strong>1599.00</strong></p>
+
+                <!-- Badge -->
+                
+                <div class="position-absolute top-0 start-0 bg-danger text-white px-3 py-1 rounded-end fw-bold">55% off</div>
+                <div class="position-absolute top-0 end-0 bg-danger text-white px-3 py-1 rounded fw-bold">Best Seller</div>
+          </div>
+      </div>
+      <div class="col-3">
+         <!-- Parent -->
+            <div class="position-relative">
+
+                <img src="https://homedecomalaysia.com/wp-content/uploads/HS1D-Hanson-Wardrobe-06-700x700-1-585x585.jpg" 
+                     class="img-fluid rounded w-100"
+                     style="height:350px; object-fit:cover;" 
+                     alt="">
+                
+                <p>Genting Malasian Wardrobe 3 doors <br><strong>31,999.00</strong></p>
+
+                <!-- Badge -->
+                
+                <div class="position-absolute top-0 start-0 bg-danger text-white px-3 py-1 rounded-end fw-bold">51% off</div>
+                <div class="position-absolute top-0 end-0 bg-danger text-white px-3 py-1 rounded fw-bold">Best Seller</div>
+          </div>
+      </div>
+    </div>
+    <h1 class="text-center">New Arrivals</h1>
+    <div class="row w-100 py-5">
+      <div class="col-3 ">
+         <!-- Parent -->
+            <div class="position-relative">
+
+                <img src="https://adventurekastlehomedecor.com.au/wp-content/uploads/2024/03/adventure-sepnew-2-999x999.jpg" 
+                     class="img-fluid rounded w-100"
+                     style="height:350px; object-fit:cover;" 
+                     alt="">
+                     <p>meditating buddha figurine with Motif 4 inches - maroonr<br><strong>3,699.00</strong></p>
+
+                <!-- Badge -->
+                
+                <div class="position-absolute top-0 start-0 bg-danger text-white px-3 py-1 rounded-end fw-bold">46% off</div>
+               <div class="position-absolute top-0 end-0 bg-danger text-white px-3 py-1 rounded fw-bold">Best Seller</div>
+          </div>
+      </div>
+      <div class="col-3">
+         <!-- Parent -->
+            <div class="position-relative">
+
+                <img src="https://tse3.mm.bing.net/th/id/OIP.2UkOctX4Z8X1jnZGS1QyuQHaHa?r=0&w=997&h=997&rs=1&pid=ImgDetMain&o=7&rm=3"
+                    class="img-fluid rounded w-100"
+                     style="height:350px; object-fit:cover;"
+                     alt="">
+                     <p>Monza Italian Dinig Table 6 seater <br><strong>22,500.00</strong></p>
+
+                <!-- Badge -->
+                
+                <div class="position-absolute top-0 start-0 bg-danger text-white px-3 py-1 rounded-end fw-bold">54% off</div>
+                <div class="position-absolute top-0 end-0 bg-danger text-white px-3 py-1 rounded fw-bold">Best Seller</div>
+          </div>
+      </div>
+      <div class="col-3">
+         <!-- Parent -->
+            <div class="position-relative">
+
+                <img src="https://i.pinimg.com/736x/73/0f/4d/730f4d7a74938be0218b36ccc1a55923.jpg"
+                    class="img-fluid rounded w-100"
+                     style="height:350px; object-fit:cover;"
+                     alt="">
+                     <p>Orian Tempered Glass table 6 seater<br><strong>55,000.00</strong></p>
+
+                <!-- Badge -->
+                
+                <div class="position-absolute top-0 start-0 bg-danger text-white px-3 py-1 rounded-end fw-bold">44% off</div>
+                <div class="position-absolute top-0 end-0 bg-danger text-white px-3 py-1 rounded fw-bold">Best Seller</div>
+          </div>
+      </div>
+      <div class="col-3">
+         <!-- Parent -->
+            <div class="position-relative">
+
+                <img src="https://i.pinimg.com/originals/5e/7c/b1/5e7cb1acffb849dd6db6f7231b448ae2.jpg" 
+                     class="img-fluid rounded w-100"
+                     style="height:350px; object-fit:cover;" 
+                     alt="">
+                
+                <p>Antic Italian Chandelier<br><strong>90,000.00</strong></p>
+
+                <!-- Badge -->
+                
+                <div class="position-absolute top-0 start-0 bg-danger text-white px-3 py-1 rounded-end fw-bold">49% off</div>
+                <div class="position-absolute top-0 end-0 bg-danger text-white px-3 py-1 rounded fw-bold">Best Seller</div>
+          </div>
+      </div>
+    </div>
+ 
+ </section>
+
+ <section class="ps-5">
+    <h1 class="text-center">Our Collections</h1>
+    <div class="row w-100 py-5 ps-3">
+      <div class="col-2 ">
+        <img src="https://tse1.mm.bing.net/th/id/OIP.dhmbO-y9njceJiMSR7Hr6AHaHa?r=0&rs=1&pid=ImgDetMain&o=7&rm=3" width="200px" height="200px" class="rounded-5" alt="">
+        <h6 class="fw-normal mx-5 my-3 ps-4">Recliners</h6>
+      </div>
+      <div class="col-2">
+        <img src="https://tse3.mm.bing.net/th/id/OIP.acapiI7hja_X5YovkBy9UwHaHa?r=0&w=500&h=500&rs=1&pid=ImgDetMain&o=7&rm=3" width="200px" height="200px" class="rounded-5" alt="">
+        <h6 class="fw-normal mx-5 my-3 ps-4">Mattress</h6>
+      </div>
+      <div class="col-2">
+        <img src="https://m.media-amazon.com/images/I/91GwBsabqhL.jpg" width="200px" height="200px" class="rounded-5" alt="">
+        <h6 class="fw-normal mx-5 my-3 ps-4">Dining Table Sets</h6>
+      </div>
+      <div class="col-2">
+        <img src="https://tse3.mm.bing.net/th/id/OIP.fYcuCGdEkVhKqcSKeIhfdAHaGa?r=0&rs=1&pid=ImgDetMain&o=7&rm=3" width="200px" height="200px" class="rounded-5" alt="">
+        <h6 class="fw-normal mx-5 my-3 ps-4">Office Table</h6>
+      </div>
+      <div class="col-2">
+        <img src="https://i5.walmartimages.com/asr/a18ebca1-fa4c-4133-b8b8-71fd85362475.6c604086f77cc96885601e21ce9c1fa0.jpeg" width="200px" height="200px" class="rounded-5" alt="">
+        <h6 class="fw-normal mx-5 my-3 ps-4">Chairs</h6>
+      </div>
+      <div class="col-2">
+        <img src="https://images.woodenstreet.de/image/data/study-tables-mdf/bracia-engineered-wood-study-table-exotic-teak-finish/exotic-teak-finish/1.jpg" width="200px" height="200px" class="rounded-5" alt="">
+        <h6 class="fw-normal mx-5 my-3 ps-4">Sudy and Computer Tables</h6>
+      </div>
+    </div>
+    <div class="row w-100 py-2 ps-3">
+      <div class="col-2 ">
+        <img src="https://tse4.mm.bing.net/th/id/OIP.nDuN-b6OizYkcz29y-HUAgHaHa?r=0&rs=1&pid=ImgDetMain&o=7&rm=3" width="200px" height="200px" class="rounded-5" alt="">
+        <h6 class="fw-normal mx-5 my-3 ps-4">Beds</h6>
+      </div>
+      <div class="col-2">
+        <img src="https://i.pinimg.com/originals/26/bf/07/26bf07ab3a1798034af5c61e2fce5bef.jpg" width="200px" height="200px" class="rounded-5" alt="">
+        <h6 class="fw-normal mx-5 my-3 ps-4">Sofa Sets</h6>
+      </div>
+      <div class="col-2">
+        <img src="https://i.pinimg.com/originals/ce/44/2b/ce442b00882d898ce3005872f8e168dc.jpg" width="200px" height="200px" class="rounded-5" alt="">
+        <h6 class="fw-normal mx-5 my-3 ps-2">TV Stand and Wall Units</h6>
+      </div>
+      <div class="col-2">
+        <img src="https://tse4.mm.bing.net/th/id/OIP.rFWoaEbSCxkyRRTMqD-raAHaHa?r=0&rs=1&pid=ImgDetMain&o=7&rm=3" width="200px" height="200px" class="rounded-5" alt="">
+        <h6 class="fw-normal mx-5 my-3 ps-4">Center Tables</h6>
+      </div>
+      <div class="col-2">
+        <img src="https://www.doors-sincerelyonline.co.uk/uploads/images/products/xxl_warwick-fitted-wardrobe-doors.jpg" width="200px" height="200px" class="rounded-5" alt="">
+        <h6 class="fw-normal mx-5 my-3 ps-4">Wardrobes</h6>
+      </div>
+      <div class="col-2">
+        <img src="https://shreeinterior.in/wp-content/uploads/2024/09/a-modern-living-room-with-trendy-modular-furniture-Bhp38Wr4R0i8KZ_EaX31WQ-UfC57MReQy6b9qBKZBfc_Q-1024x640.jpeg" width="200px" height="200px" class="rounded-5" alt="">
+        <h6 class="fw-normal mx-5 my-3 ps-4">Modular Furniture</h6>
+      </div>
+    </div>
+
+ </section>
+
+<section class="container-fluid py-5">
+    <div class="position-relative">
+
+        <img src="./images/muntzir_mehdi-round-window-4272049.jpg"
+            class="w-100 rounded"
+            style="height:400px; object-fit:cover;"
+            alt="">
+
+        <!-- Text Box -->
+        <div class="position-absolute top-50 start-0 translate-middle-y ms-5 p-4 rounded"
+             style="background-color: rgba(255,255,255,0.75); width:40%;">
+
+            <h1 class="display-3 fw-light text-dark">
+                IKEA SOFA SET
+            </h1>
+
+            <div class="border-bottom border-dark border-4 w-50 mb-4"></div>
+
+            <h2 class="fw-light text-dark">
+                The Ultimate Cozy Factor
+            </h2>
+
+            <h2 class="fw-light text-dark">
+                to your living space
+            </h2>
+            <div class="d-flex gap-5 mt-4">
+
+    <div class="d-flex align-items-center">
+        <div class="bg-dark rounded-circle d-flex justify-content-center align-items-center"
+             style="width:60px;height:60px;">
+            <i class="fa-solid fa-couch text-white fs-3"></i>
+        </div>
+
+        <div class="ms-3">
+            <strong>Premium Fabric</strong><br>
+            Upholstery
+        </div>
+    </div>
+
+    <div class="d-flex align-items-center">
+        <div class="bg-dark rounded-circle d-flex justify-content-center align-items-center"
+             style="width:60px;height:60px;">
+            <i class="fa-solid fa-shield-halved text-white fs-3"></i>
+        </div>
+
+        <div class="ms-3">
+            <strong>Durable</strong><br>
+            Structure
+        </div>
+    </div>
+
+</div>
+
+        </div>
+
+    </div>
+</section>
+
+<section class="container py-5">
+
+    <h1 class="text-center display-3 fw-bold text-secondary">
+        Customer Words
+    </h1>
+
+    <p class="text-center fs-3 mb-5">
+        Happy Testimonials From Our Satisfied Customers
+    </p>
+
+    <div class="row g-4">
+
+        <!-- Card 1 -->
+        <div class="col-lg-3 col-md-6">
+
+            <div class="card shadow h-100 border-0">
+
+                <img src="https://images.unsplash.com/photo-1505693416388-ac5ce068fe85?w=600"
+                    class="card-img-top p-3 rounded-5"
+                    style="height:250px; object-fit:cover;">
+
+                <div class="card-body text-center">
+
+                    <p class="card-text">
+                        Premium quality furniture available at our showroom.
+                        Highly recommended with excellent customer service.
+                    </p>
+
+                    <hr class="w-50 mx-auto">
+
+                    <div class="text-warning fs-4">
+                        ★★★★★
+                    </div>
+
+                    <h4 class="fw-bold mt-3">
+                        Harikrishna
+                    </h4>
+
+                    <p class="text-secondary">
+                        Kalamassery, Kerala
+                    </p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <!-- Card 2 -->
+        <div class="col-lg-3 col-md-6">
+
+            <div class="card shadow h-100 border-0">
+
+                <img src="https://images.unsplash.com/photo-1555041469-a586c61ea9bc?w=600"
+                    class="card-img-top p-3 rounded-5"
+                    style="height:250px; object-fit:cover;">
+
+                <div class="card-body text-center">
+
+                    <p class="card-text">
+                        Amazing shopping experience. The staff were friendly and
+                        helped us choose the perfect furniture.
+                    </p>
+
+                    <hr class="w-50 mx-auto">
+
+                    <div class="text-warning fs-4">
+                        ★★★★★
+                    </div>
+
+                    <h4 class="fw-bold mt-3">
+                        Waquar Sadri
+                    </h4>
+
+                    <p class="text-secondary">
+                        Lucknow, Uttar Pradesh
+                    </p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <!-- Card 3 -->
+        <div class="col-lg-3 col-md-6">
+
+            <div class="card shadow h-100 border-0">
+
+                <img src="https://images.unsplash.com/photo-1505693416388-ac5ce068fe85?w=600"
+                    class="card-img-top p-3 rounded-5"
+                    style="height:250px; object-fit:cover;">
+
+                <div class="card-body text-center">
+
+                    <p class="card-text">
+                        Good quality products with excellent finishing.
+                        Delivery and installation were completed on time.
+                    </p>
+
+                    <hr class="w-50 mx-auto">
+
+                    <div class="text-warning fs-4">
+                        ★★★★★
+                    </div>
+
+                    <h4 class="fw-bold mt-3">
+                        Jharna Roy
+                    </h4>
+
+                    <p class="text-secondary">
+                        Durgapur, West Bengal
+                    </p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <!-- Card 4 -->
+        <div class="col-lg-3 col-md-6">
+
+            <div class="card shadow h-100 border-0">
+
+                <img src="https://images.unsplash.com/photo-1484154218962-a197022b5858?w=600"
+                    class="card-img-top p-3 rounded-5"
+                    style="height:250px; object-fit:cover;">
+
+                <div class="card-body text-center">
+
+                    <p class="card-text">
+                        Great furniture collection with premium quality and
+                        excellent after-sales support.
+                    </p>
+
+                    <hr class="w-50 mx-auto">
+
+                    <div class="text-warning fs-4">
+                        ★★★★★
+                    </div>
+
+                    <h4 class="fw-bold mt-3">
+                        Aditya
+                    </h4>
+
+                    <p class="text-secondary">
+                        Kochi, Kerala
+                    </p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+<footer class="bg-light mt-5">
+
+    <!-- Top Features -->
+    <div class="container py-5">
+        <div class="row text-center">
+
+            <!-- Assured Quality -->
+            <div class="col-lg-3 col-md-6 mb-4">
+                <i class="fa-regular fa-circle-check fa-4x mb-3"></i>
+
+                <h4 class="fw-bold">ASSURED QUALITY</h4>
+
+                <p>
+                    We strive to provide you with products only after
+                    its quality has been assured.
+                </p>
+            </div>
+
+            <!-- Value For Money -->
+            <div class="col-lg-3 col-md-6 mb-4">
+                <i class="fa-solid fa-wallet fa-4x mb-3"></i>
+
+                <h4 class="fw-bold">VALUE FOR MONEY</h4>
+
+                <p>
+                    We guarantee cheaper prices than your favorite
+                    online store.
+                </p>
+            </div>
+
+            <!-- Warranty -->
+            <div class="col-lg-3 col-md-6 mb-4">
+                <i class="fa-regular fa-thumbs-up fa-4x mb-3"></i>
+
+                <h4 class="fw-bold">36 MONTH WARRANTY</h4>
+
+                <p>
+                    Sit back and relax once you've placed an order.
+                    We've got you covered.
+                </p>
+            </div>
+
+            <!-- Free Assembly -->
+            <div class="col-lg-3 col-md-6 mb-4">
+                <i class="fa-solid fa-screwdriver-wrench fa-4x mb-3"></i>
+
+                <h4 class="fw-bold">FREE ASSEMBLY SERVICE</h4>
+
+                <p>
+                    We offer nationwide free installation services
+                    after delivery of your order.
+                </p>
+            </div>
+
+        </div>
+    </div>
+
+    <hr>
+
+    <!-- Footer Links -->
+    <div class="container py-5">
+
+        <div class="row">
+
+            <!-- Our Company -->
+            <div class="col-lg-3 col-md-6 mb-4">
+
+                <h3 class="fw-bold mb-4">OUR COMPANY</h3>
+
+                <ul class="list-unstyled">
+
+                    <li class="mb-2"><a href="#" class="text-dark text-decoration-none">About Us</a></li>
+
+                    <li class="mb-2"><a href="#" class="text-dark text-decoration-none">Career</a></li>
+
+                    <li class="mb-2"><a href="#" class="text-dark text-decoration-none">Media</a></li>
+
+                    <li class="mb-2"><a href="#" class="text-dark text-decoration-none">Blog</a></li>
+
+                    <li><a href="#" class="text-dark text-decoration-none">Customer Stories</a></li>
+
+                </ul>
+
+            </div>
+
+            <!-- Useful Links -->
+            <div class="col-lg-3 col-md-6 mb-4">
+
+                <h3 class="fw-bold mb-4">USEFUL LINKS</h3>
+
+                <ul class="list-unstyled">
+
+                    <li class="mb-2"><a href="#" class="text-dark text-decoration-none">Custom Furniture</a></li>
+
+                    <li class="mb-2"><a href="#" class="text-dark text-decoration-none">Exporters</a></li>
+
+                    <li class="mb-2"><a href="#" class="text-dark text-decoration-none">Buy in Bulk</a></li>
+
+                    <li class="mb-2"><a href="#" class="text-dark text-decoration-none">Hotel Furniture</a></li>
+
+                    <li class="mb-2"><a href="#" class="text-dark text-decoration-none">Delivery Location</a></li>
+
+                    <li class="mb-2"><a href="#" class="text-dark text-decoration-none">Privacy Policy</a></li>
+
+                    <li class="mb-2"><a href="#" class="text-dark text-decoration-none">Terms & Conditions</a></li>
+
+                    <li><a href="#" class="text-dark text-decoration-none">Cancellation & Refund</a></li>
+
+                </ul>
+
+            </div>
+
+            <!-- Shop By Room -->
+            <div class="col-lg-3 col-md-6 mb-4">
+
+                <h3 class="fw-bold mb-4">SHOP BY ROOM</h3>
+
+                <ul class="list-unstyled">
+
+                    <li class="mb-2"><a href="#" class="text-dark text-decoration-none">Living Room</a></li>
+
+                    <li class="mb-2"><a href="#" class="text-dark text-decoration-none">Bedroom</a></li>
+
+                    <li class="mb-2"><a href="#" class="text-dark text-decoration-none">Dining Room</a></li>
+
+                    <li class="mb-2"><a href="#" class="text-dark text-decoration-none">Kids Room</a></li>
+
+                    <li><a href="#" class="text-dark text-decoration-none">Study Room</a></li>
+
+                </ul>
+
+            </div>
+
+            <!-- Need Help -->
+            <div class="col-lg-3 col-md-6 mb-4">
+
+                <h3 class="fw-bold mb-4">NEED HELP</h3>
+
+                <ul class="list-unstyled">
+
+                    <li class="mb-2"><a href="#" class="text-dark text-decoration-none">Help Center</a></li>
+
+                    <li class="mb-2"><a href="#" class="text-dark text-decoration-none">Contact Us</a></li>
+
+                    <li class="mb-2"><a href="#" class="text-dark text-decoration-none">Ask Experts</a></li>
+
+                    <li class="mb-2"><a href="#" class="text-dark text-decoration-none">FAQs</a></li>
+
+                    <li><a href="#" class="text-dark text-decoration-none">Policies</a></li>
+
+                </ul>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <hr>
+
+    <!-- Copyright -->
+    <div class="container text-center py-3">
+
+        <p class="mb-0">
+            © Copyrights 2015 - 2026 Furniselan. All Rights Reserved.
+        </p>
+
+    </div>
+
+</footer>
+    
+</body>
+</html>
